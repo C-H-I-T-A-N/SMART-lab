@@ -1,0 +1,188 @@
+
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.header {
+    color: black;
+    padding: 10px;
+    background-color: rgb(182, 214, 20);
+    font-size: 15px;
+    /* text-align: center; */
+}
+
+logout {
+    color: gray;
+    font-weight: lighter;
+    position: relative;
+    float: right;
+}
+
+h1 {
+    color: rgb(44, 2, 2);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(44, 2, 2);
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+form {
+    margin-left: 10px;
+    color: black;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline;}
+a:active { text-decoration: none; }
+
+/* Flexbox containing SMART */
+.smartFlex {
+    padding-left: 1mm;
+    padding-right: 1mm;
+    display: flex;
+    flex-flow: column;
+    /* gap: 10px; */
+    padding-left: 4mm;
+    padding-right: 2mm;
+}
+
+.smartOutline {
+    border: 1px solid green;
+    background-color:  white;
+}
+
+.smart {
+    color: black;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.smart.word {
+    font-size: large;
+    font-weight: normal;
+}
+
+.smart.word:first-letter {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.logout {
+    text-align: right;
+    position: relative;
+    float: right;
+}
+
+line {
+    font-size: x-large;
+    border-right: 2.5px solid black;
+    padding-right: 4px;
+    margin-right: 10px;
+    height: max-content;
+    font-family: monospace;
+    display:inline-block;
+    width: 175px;
+}
+
+/* Flexbox containing goals */
+.goalFlex {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.goal.outline    {
+    background-color: peachpuff; 
+
+    border-style: dashed;
+    border-radius: 4px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 350px;
+    height: 100px;
+}
+
+.goal {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Flexbox containing tasks */
+.taskFlex {
+    padding-left: 4mm;
+    padding-right: 2mm;
+    display: flex;
+    flex-flow: column;
+    /* gap: 10px; */
+}
+
+.task.outline   {
+    border: 1px solid darkgreen;
+    background-color: white;
+    /* border-radius: 10px; */
+}
+
+.task {
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Content in flexboxes */
+.name {
+    text-align: left;
+    display: inline-block;
+}
+
+.date {
+    text-align: right;
+    float: right;
+    color: grey;
+}
+
+.description {
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+}
+
+.goal.goal2 {background-color:unset;}
+.goal.goal2 {background-color: rgb(222, 28, 28);}
+.goal.goal3 {background-color: rgb(245, 141, 13);}
+.goal.goal4 {background-color: rgb(243, 232, 25);}
+.goal.goal5 {background-color: rgb(38, 116, 13);}
+.goal.goal6 {background-color: rgb(27, 55, 139);}
+.NEW_GOAL{
+    /* For getting the text in the middle */
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-weight: lighter;
+    color: grey;
+    font-size: 30px;
+}
+
+

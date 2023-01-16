@@ -1,0 +1,51 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART-lab - add goal</title>
+    <link rel="icon" href="icon.svg">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="header.js" type="text/javascript" defer></script>
+</head>
+
+<temp-header></temp-header>
+
+<body style="background-color:rgba(226, 232, 226, 0.933);">
+
+<div class  = goal>
+    <label name = "goal Name"> Please enter a name for your new goal: <br> </label>
+    <input type = "text" name = "goalName">
+</div>
+
+
+<div class  = goal>
+    <label name = briefDescription> Enter a brief description of this Goal: <br> </label>
+    <textarea rows = 10 cols= 30 name = "briefDescription"></textarea><br><br>
+
+
+    <label name = "goal Name"> S: </label>
+    <input type = "text" name = "goalName"><br>
+
+    <label name = "goal Name"> M: </label>
+    <input type = "text" name = "goalName"><br>
+
+    <label name = "goal Name"> A: </label>
+    <input type = "text" name = "goalName"><br>
+
+    <label name = "goal Name"> R: </label>
+    <input type = "text" name = "goalName"><br>
+
+    <label name = "goal Name"> T: </label>
+    <input type = "text" name = "goalName"><br><br>
+
+    <label name = "dueDate"> Select a due date for this goal. <br></label>
+    <input type = date name = "dueDate"><br><br>
+
+    <form action="goalList.html" method="PUT">
+
+        <div><input type="submit" value="Confirm and Add Goal"></div>
+    
+      </form>
+</div>
+
+</body>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="header.js" type="text/javascript" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART-lab</title>
+    <link rel="icon" href="icon.svg">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<temp-header></temp-header>
+
+<body style="background-color:rgba(226, 232, 226, 0.933);">
+
+    <div class = "goal outline goal1">
+        <div class = "goal name" id = "getGoal"> Goal </div>
+        <div class = "goal date"> 6-02-2023 </div>
+        <div class="goal description"> I want to lose weight </div>
+    </div>
+
+    <br>
+    <div class = "smartFlex">
+        <div class = "smart smartOutline">
+            <line>
+                <div class="smart word">Specific</div>
+            </line>
+            <div style="display:inline-flex">
+                I want to do a fitness exercise at least twice a week.<br>
+                Over time the intensity should increase. <br>
+            </div>
+        </div>
+    
+        <div class = "smart smartOutline">
+            <line>
+                <div class="smart word">Measurable</div>
+            </line>
+            I want to lose 1 kilo.
+        </div>
+    
+        <div class = "smart smartOutline">
+            <line>
+                <div class="smart word">Achievable</div>
+            </line>
+            I believe it to be achieveble if I have a good routine
+        </div>
+    
+        <div class = "smart smartOutline">
+            <line>
+                <div class="smart word">Relevant</div>
+            </line>
+            It is doable
+        </div>
+    
+        <div class = "smart smartOutline">
+            <line>
+                <div class="smart word">Time-related</div>
+            </line>
+            I want it to be done in one month.
+        </div>
+    </div>
+
+    <br>
+
+    <div class = taskFlex>
+        
+        <div class = "task outline task2">
+            <div class = "task name"> Task #1 </div>
+            <div class = "task date"> 6-02-2023 </div>
+            <div class="task description"> Run 10 kilometer </div>
+
+            <div style="text-align:center;">
+            <input type = "range" name = "kmran" min = "0" max = "10" step = "1" oninput="this.nextElementSibling.value = this.value">
+            <output>5</output></div>
+
+        </div>
+
+        <div class = "task outline task2">
+            <div class = "task name"> Task #2 </div>
+            <div class = "task date"> 14-02-2023 </div>
+            <div class="task description"> Eat meals </div>
+        
+            <input type = "checkbox" name = "Eat Breakfast" value = "Breakfast">
+            Breakfast<br>
+            <input type = "checkbox" name = "Eat Lunch" value = "Lunch">
+            Lunch<br>
+            <input type = "checkbox" name = "Eat Dinner" value = "Dinner">
+            Dinner<br>
+        
+        </div>
+
+        <div class = "task outline task2">
+            <div class = "task name"> Task #3 </div>
+            <div class = "task date"> 9-02-2023 </div>
+            <div class="task description"> Bench press 20kg </div>
+
+            <div style="text-align:center;">
+            <input type = "radio" name = "Call mom">       
+            <label for ="Call mom">10kg</label>
+            <input type = "radio" name = "Call dad">       
+            <label for ="Call dad">15kg</label>
+            <input type = "radio" name = "Call brother">       
+            <label for ="Call brother">20kg</label></div>
+
+        </div>
+
+    </div>
+
+<br><br><button>
+    <a href = "addTask.html">
+        Add Task
+    </a>
+</button>
+
+</body>
+
+<script>
+document.getElementById("getGoal").innerHTML = window.location.search.split("=")[1].replace("%20", " ").replace("%23", "#");
+</script>
