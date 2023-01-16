@@ -5,21 +5,6 @@
     font-weight: bold;
 }
 
-.header {
-    color: black;
-    padding: 10px;
-    background-color: rgb(182, 214, 20);
-    font-size: 15px;
-    /* text-align: center; */
-}
-
-logout {
-    color: gray;
-    font-weight: lighter;
-    position: relative;
-    float: right;
-}
-
 h1 {
     color: rgb(44, 2, 2);
     letter-spacing: 2px;
@@ -76,12 +61,6 @@ a:active { text-decoration: none; }
 .smart.word:first-letter {
     font-weight: bold;
     font-size: 25px;
-}
-
-.logout {
-    text-align: right;
-    position: relative;
-    float: right;
 }
 
 line {
