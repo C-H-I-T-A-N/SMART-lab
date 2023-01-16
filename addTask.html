@@ -12,25 +12,47 @@
 
 <body style="background-color:rgba(226, 232, 226, 0.933);">
 
-<h1> Add a Task</h1>
+<div class = "goalFlex">
+    <h1> Add a Task</h1>
+</div>
 
-<label for="taskName"> Enter a task name and goal.</label><br><br>
-<input type="text" name="taskName"><br><br>
+<div class = "goalFlex">
+    <label for="taskName"> Enter a task name and goal.<br></label>
+</div>
+<br>
+<div class = "goalFlex">
+    <textarea name="taskName" rows = 10 cols = 30></textarea><br><br>
+</div>
+<br>
+<div class = "goalFlex">
+    <label for="Type0"> Choose which type of task you wish to create. <br> </label>
+</div>
+<br>
+<div class = "goalFlex">
+    <label for="numeric"> Numeric</label>
+    <input type="radio" name="Type0" value="numeric"><br><br>
+</div>
 
-<label for="Type0"> Choose which type of task you wish to create.</label><br><br>
-<label for="numeric"> Numeric</label>
-<input type="radio" name="Type0" value="numeric"><br>
-<br>
-<label for="monetary"> Monetary</label>
-<input type="radio" name="Type1" value="monetary"><br>
-<br>
+<div class = "goalFlex">
+    <label for="monetary"> Monetary</label>
+    <input type="radio" name="Type1" value="monetary"><br><br>
+</div>
+
+<div class = "goalFlex">
 <label for="description"> Description</label>
-<input type="radio" name="Type2" value="description"><br>
-<br>
-<label for="boolean"> Boolean</label>
-<input type="radio" name="Type0" value="boolean"><br><br>
+<input type="radio" name="Type2" value="description"><br><br>
+</div>
 
-<a href="specificGoal.html"><button>Add</button></a>
+<div class = "goalFlex">
+    <label for="boolean"> Boolean</label>
+    <input type="radio" name="Type0" value="boolean"><br><br>
+</div>
+
+<br><br><button style="margin-left: auto; margin-right: auto; height: 50px; width: 200px;">
+    <a href = "specificGoal.html">
+        Confirm Task
+    </a>
+</button>
 
 
 </body>
