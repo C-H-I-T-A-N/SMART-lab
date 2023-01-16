@@ -17,6 +17,8 @@ connectedCallback() {
     }        
 
     .logout {
+        color: gray;
+        font-weight: lighter;
         text-align: right;
         position: relative;
         float: right;
@@ -58,6 +60,8 @@ class HeaderMinus extends HTMLElement {
         }        
 
         .logout {
+            color: gray;
+            font-weight: lighter;
             text-align: right;
             position: relative;
             float: right;
