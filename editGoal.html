@@ -1,0 +1,52 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART-lab - add goal</title>
+    <link rel="icon" href="icon.svg">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="header.js" type="text/javascript" defer></script>
+</head>
+
+<temp-header></temp-header>
+
+<body style="background-color:rgba(226, 232, 226, 0.933);">
+
+<div class  = goal>
+    <label name = "goal Name"> Please enter a name for your new goal: <br> </label>
+    <input type = "text" name = "goalName" value = "Goal #1"> 
+</div>
+
+
+<div class  = goal>
+    <label name = briefDescription> Enter a new description of this Goal: <br> </label>
+    <textarea rows = 10 cols= 30 name = "briefDescription"> I want to lose weight</textarea><br><br>
+
+
+    <label name = "goal Name"> S: </label>
+    <input type = "text" name = "goalName" value = "I want to do a fitness exercise at least twice a week.
+    Over time the intensity should increase."><br>
+
+    <label name = "goal Name"> M: </label>
+    <input type = "text" name = "goalName" value = "I want to lose 1 kilo."><br>
+
+    <label name = "goal Name"> A: </label>
+    <input type = "text" name = "goalName" value = "I believe it to be achievable if I have a good routine"><br>
+
+    <label name = "goal Name"> R: </label>
+    <input type = "text" name = "goalName" value = "It is doable"><br>
+
+    <label name = "goal Name"> T: </label>
+    <input type = "text" name = "goalName" value = "I want it to be done in one month"><br><br>
+
+    <label name = "dueDate"> Select a due date for this goal. <br></label>
+    <input type = date name = "dueDate"><br><br>
+
+    <form action="goalList.html" method="PUT">
+
+        <div><input type="submit" value="Confirm edit"></div>
+    
+      </form>
+</div>
+
+</body>
