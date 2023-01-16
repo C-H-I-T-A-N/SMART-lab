@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="header.js" type="text/javascript" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMART-lab</title>
+    <title>SMART-lab - goal list</title>
     <link rel="icon" href="icon.svg">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="header.js" type="text/javascript" defer></script>
 </head>
+
+
+<!-- <style>
+    .Goal {display: block;}
+</style> -->
 
 <temp-header></temp-header>
 
@@ -18,135 +23,85 @@
         <div style="line-height: 50px;">When do you want to set a notification?</div>
         <div style="line-height: 30px;"><input type = date name = "dueDate"></div>
         <div style="line-height: 30px;"><input type = time name = "dueTime"></div>
-        <a href="specificGoal.html"><button>Confirm</button></a>
-        <a href="specificGoal.html"><button>Cancel</button></a>
+        <a href="goalList.html"><button>Confirm</button></a>
+        <a href="goalList.html"><button>Cancel</button></a>
     </div>
 
+<h1> ----Your Goals----</h1><br>
 
-    <div class = "goal outline goal1">
-        <div class = "goal name" id = "getGoal"> Goal </div>
-        <div class = "goal date"> 6-02-2023 </div>
-        <div class="goal description"> I want to lose weight </div>
-    </div>
 
-    <br>
-    <div class = "smartFlex">
-        <div class = "smart smartOutline">
-            <line>
-                <div class="smart word">Specific</div>
-            </line>
-            <div style="display:inline-flex">
-                I want to do a fitness exercise at least twice a week.<br>
-                Over time the intensity should increase. <br>
-            </div>
+<div class="goalFlex">
+    <a href = "specificGoal.html?goal=Goal %231">
+        <div class="goal outline goal1">
+            <div class="goal name">
+                Goal #1</div>
+            <div class="goal date">
+                12-02-2023</div>
+            <div class="goal description">
+                Excercise more</div>
         </div>
-    
-        <div class = "smart smartOutline">
-            <line>
-                <div class="smart word">Measurable</div>
-            </line>
-            I want to lose 1 kilo.
-        </div>
-    
-        <div class = "smart smartOutline">
-            <line>
-                <div class="smart word">Achievable</div>
-            </line>
-            I believe it to be achieveble if I have a good routine
-        </div>
-    
-        <div class = "smart smartOutline">
-            <line>
-                <div class="smart word">Relevant</div>
-            </line>
-            It is doable
-        </div>
-    
-        <div class = "smart smartOutline">
-            <line>
-                <div class="smart word">Time-related</div>
-            </line>
-            I want it to be done in one month.
-        </div>
-    </div>
-
-    <br>
-
-    <div class = taskFlex>
-        
-        <div class = "task outline task1">
-            <div class = "task name"> Task #1 </div>
-            <div class = "task date"> 6-02-2023 </div>
-            <div class="task description"> Run 10 kilometer </div>
-
-            <div style="text-align:center;">
-            <input type = "range" name = "kmran" min = "0" max = "10" step = "1" oninput="this.nextElementSibling.value = this.value">
-            <output>5</output></div>
-
-            <br>
-            <div class="optionlist">
-                <a><div class="option">Mark ascompleted</div></a>
-                <a><div class="option">Edit task</div></a>
-                <a><div class="option">Delete task</div></a>
-            </div>
-
-        </div>
-
-        <div class = "task outline task2">
-
-            <div class = "task name"> Task #2 </div>
-            <div class = "task date"> 14-02-2023 </div>
-            <div class="task description"> Eat meals </div>
-        
-            <input type = "checkbox" name = "Eat Breakfast" value = "Breakfast">
-            Breakfast<br>
-            <input type = "checkbox" name = "Eat Lunch" value = "Lunch">
-            Lunch<br>
-            <input type = "checkbox" name = "Eat Dinner" value = "Dinner">
-            Dinner<br>
-        
-            <br>
-
-            <div class="optionlist">
-                <a><div class="option">Mark as not completed</div></a>
-                <a><div class="option">Edit task</div></a>
-                <a><div class="option">Delete task</div></a>
-            </div>
-
-        </div>
-
-        <div class = "task outline task3">
-            <div class = "task name"> Task #3 </div>
-            <div class = "task date"> 9-02-2023 </div>
-            <div class="task description"> Bench press 20kg </div>
-
-            <div style="text-align:center;">
-            <input type = "radio" name = "Call mom">       
-            <label for ="Call mom">10kg</label>
-            <input type = "radio" name = "Call dad">       
-            <label for ="Call dad">15kg</label>
-            <input type = "radio" name = "Call brother">       
-            <label for ="Call brother">20kg</label></div>
-
-            <br>
-            <div class="optionlist">
-                <a><div class="option">Mark as completed</div></a>
-                <a><div class="option">Edit task</div></a>
-                <a><div class="option">Delete task</div></a>
-            </div>
-
-        </div>
-
-    </div>
-
-<br><br><button>
-    <a href = "addTask.html">
-        Add Task
     </a>
-</button>
+    
+    <a href = "specificGoal.html?goal=Goal %232">
+        <div class = "goal outline goal2">
+            <div class = "goal name"> Goal #2 </div>
+            <div class = "goal date"> 6-02-2023 </div>
+            <div class="goal description"> Read 5 books </div>
+        </div>
+    </a>
+
+    <a href = "specificGoal.html?goal=Goal %233">
+        <div class = "goal outline goal3">
+            <div class = "goal name">
+                Goal #3</div>
+            <div class = "goal date">
+                15-03-2023</div>
+            <div class="goal description">
+                Eat more healthy</div>
+        </div>
+    </a>
+
+    <a href = "specificGoal.html?goal=Goal %234">
+        <div class = "goal outline goal4">
+            <div class = "goal name">
+                Goal #4</div>
+            <div class = "goal date">
+                14-02-2023</div>
+            <div class="goal description">
+                Do more activites</div>
+        </div>
+    </a>
+
+    <a href = "specificGoal.html?goal=Goal %235">
+        <div class = "goal outline goal5">
+            <div class = "goal name">
+                Goal #5</div>
+            <div class = "goal date">
+                11-02-2023</div>
+            <div class="goal description">
+                Sleep more</div>
+        </div>
+    </a>
+
+    <a href = "specificGoal.html?goal=Goal %236">
+        <div class = "goal outline goal6">
+            <div class = "goal name">
+                Goal #6</div>
+            <div class = "goal date">
+                16-01-2023</div>
+            <div class="goal description">
+                Make WDT assignment</div>
+        </div>
+    </a>
+
+    <a href = "addGoal.html">
+        <div class = "goal outline" style="background-color: aliceblue">
+            <div class = "NEW_GOAL">
+                Add New Goal!+</div>
+        </div>
+
+    </a>
+
+</div>
 
 </body>
-
-<script>
-document.getElementById("getGoal").innerHTML = window.location.search.split("=")[1].replace("%20", " ").replace("%23", "#");
-</script>
