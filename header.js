@@ -5,6 +5,25 @@ constructor() {
 
 connectedCallback() {
     this.innerHTML = `
+
+    <style>
+
+    .header {
+        color: black;
+        padding: 10px;
+        background-color: rgb(182, 214, 20);
+        font-size: 15px;
+        /* text-align: center; */
+    }        
+
+    .logout {
+        text-align: right;
+        position: relative;
+        float: right;
+    }
+
+    </style>
+    
     <div class = "header">
     <a href = "Signin.html"><logout>Log out</logout></a>
     <br>
@@ -27,6 +46,26 @@ class HeaderMinus extends HTMLElement {
     
     connectedCallback() {
         this.innerHTML = `
+
+        <style>
+        
+        .header {
+            color: black;
+            padding: 10px;
+            background-color: rgb(182, 214, 20);
+            font-size: 15px;
+            /* text-align: center; */
+        }        
+
+        .logout {
+            text-align: right;
+            position: relative;
+            float: right;
+        }
+        
+        </style>
+
+
         <div class = "header">
         <br>
         <a href="goalList.html">
